@@ -4,8 +4,13 @@
 
 //2. Create an array of numbers from 1 - 10; slice the 5th number in the array
 
+var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+myArray.slice(4,5); // Starts at array[4] and removes 5 numbers after
 
 //3. Delete the last number in the array that you created above.
+
+myArray.splice(9, 1); //Starts at the 9th in the Array and removes 1.
 
 
 //4. Given the following paragraph, create a JavaScript function that changes all mentions of strawberry to banana and strawberries to bananas: 
@@ -17,6 +22,17 @@ Strawberries are a popular part of spring and summer diets throughout America. M
 
 //6. Create an array of objects with 3 people inside it. Use the filter function to map by a name.
 
+var peopleNames = [
+    {firstName: "John", lastName: "Johnson"},
+    {firstName: "Tim", lastName: "Timsen"},
+    {firstName:  "Peter", lastName: "Petersen"}
+]
+
+var names = peopleNames.filter(function(firstName){
+    return (firstName.lastName === "Timsen");
+})
+
+console.log(names);
 
 //7. Create a simple function that logs the date.
 
