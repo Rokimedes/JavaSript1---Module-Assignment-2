@@ -36,3 +36,14 @@ console.log(names);
 
 //7. Create a simple function that logs the date.
 
+function todaysDate () {
+    var currentDay = new Date();
+    var date = currentDay.getDate();
+    var month = currentDay.getMonth();
+    var year = currentDay.getFullYear();
+
+    console.log(date + "/" + (month+1) + "/" + year);
+
+};
+
+todaysDate();
