@@ -1,19 +1,23 @@
 //MODULE ASSIGNMENT 2 - LEVEL 1
 //1. Create a function that displays prototypal inheritance
-function newCar () {
-var car = {
-    colour : "Grey",
-    fuel : "Diesel"
-};
 
-var carModel = {
-    make : "VW",
-};
-};
+var Car = function(make, model, engine, colour) {
 
-console.log(this.carModel);
+    this.newCar = {
+        make,
+        model,
+        engine
+    };
 
-newCar();
+    this.colour = colour;
+}
+
+Car.prototype.sayMessage = function() {
+    return "I got a " + this.newCar.make + " " + this.newCar.model + " that runs on " + this.newCar.engine + " and has a " + this.colour + " colour."
+}
+
+var carOne = new Car("VW", "Golf", "Diesel", "Grey");
+carOne.sayMessage();
 
 
 //2. Create an array of numbers from 1 - 10; slice the 5th number in the array
@@ -43,6 +47,8 @@ replaceWords();
 
 
 //5. Create an array and a button. The array should contain 4 football clubs names. When the button is clicked, remove all elements out of the array that we just created. There after add in 4 names of cars inside that array. Log it to the console.
+
+
 
 
 //6. Create an array of objects with 3 people inside it. Use the filter function to map by a name.
