@@ -14,4 +14,7 @@
 		myFunction();
 
 
+Answer: The message that will be written to the console is: "inside my function".
+
+
 5. Briefly describe scope in JavaScript.
