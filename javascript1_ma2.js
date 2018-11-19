@@ -48,9 +48,10 @@ replaceWords();
 
 //5. Create an array and a button. The array should contain 4 football clubs names. When the button is clicked, remove all elements out of the array that we just created. There after add in 4 names of cars inside that array. Log it to the console.
 
-function nameArray() {
-    var itemNames = ["Man Utd", "Liverpool", "Man City", "Arsenal"];
+var itemNames = ["Man Utd", "Liverpool", "Man City", "Arsenal"];
     console.log(itemNames);
+
+function nameArray() {
 
     itemNames.splice(0,4);
     itemNames.push("VW", "BMW", "Volvo", "Opel");
