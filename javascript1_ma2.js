@@ -1,5 +1,19 @@
 //MODULE ASSIGNMENT 2 - LEVEL 1
 //1. Create a function that displays prototypal inheritance
+function newCar () {
+var car = {
+    colour : "Grey",
+    fuel : "Diesel"
+};
+
+var carModel = {
+    make : "VW",
+};
+};
+
+console.log(this.carModel);
+
+newCar();
 
 
 //2. Create an array of numbers from 1 - 10; slice the 5th number in the array
